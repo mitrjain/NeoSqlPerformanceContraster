@@ -22,7 +22,7 @@ print("Loading professionals.csv")
 insertQ = "INSERT INTO professionals (professionals_id, professionals_location, professionals_industry, professionals_headline, professionals_date_joined) VALUES "
 numQueries = 0
 
-with open('professionals.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/professionals.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -50,7 +50,7 @@ print("Loading students.csv")
 insertQ = "INSERT INTO students (students_id,students_location,students_date_joined) VALUES "
 numQueries = 0
 
-with open('students.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/students.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -78,7 +78,7 @@ print("Loading tags.csv")
 insertQ = "INSERT INTO tags (tags_tag_id,tags_tag_name) VALUES "
 numQueries = 0
 
-with open('tags.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/tags.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -103,7 +103,7 @@ print("Loading groups.csv")
 insertQ = "INSERT INTO groups_ (groups_id,groups_group_type) VALUES "
 numQueries = 0
 
-with open('groups.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/groups.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -129,7 +129,7 @@ print("Loading questions.csv")
 insertQ = "INSERT INTO questions (questions_id,questions_author_id,questions_date_added,questions_title,questions_body) VALUES "
 numQueries = 0
 
-with open('questions.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/questions.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -159,7 +159,7 @@ print("Loading tag_questions.csv")
 insertQ = "INSERT INTO tag_questions (tag_questions_tag_id,tag_questions_question_id) VALUES "
 numQueries = 0
 
-with open('tag_questions.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/tag_questions.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -184,7 +184,7 @@ print("Loading tag_users.csv")
 insertQ = "INSERT INTO tag_users (tag_users_tag_id,tag_users_user_id) VALUES "
 numQueries = 0
 
-with open('tag_users.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/tag_users.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -209,7 +209,7 @@ print("Loading group_memberships.csv")
 insertQ = "INSERT INTO group_memberships (group_memberships_group_id,group_memberships_user_id) VALUES "
 numQueries = 0
 
-with open('group_memberships.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/group_memberships.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -234,7 +234,7 @@ print("Loading school_memberships.csv")
 insertQ = "INSERT INTO school_memberships (school_memberships_school_id,school_memberships_user_id) VALUES "
 numQueries = 0
 
-with open('school_memberships.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/school_memberships.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -259,7 +259,7 @@ print("Loading answers.csv")
 insertQ = "INSERT INTO answers (answers_id,answers_author_id,answers_question_id,answers_date_added,answers_body) VALUES "
 numQueries = 0
 
-with open('answers.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/answers.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -289,7 +289,7 @@ print("Loading comments.csv")
 insertQ = "INSERT INTO comments (comments_id,comments_author_id,comments_parent_content_id,comments_date_added,comments_body) VALUES "
 numQueries = 0
 
-with open('comments.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/comments.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -319,7 +319,7 @@ print("Loading emails.csv")
 insertQ = "INSERT INTO emails (emails_id,emails_recipient_id,emails_date_sent,emails_frequency_level) VALUES "
 numQueries = 0
 
-with open('emails.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/emails.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -347,7 +347,7 @@ print("Loading matches.csv")
 insertQ = "INSERT INTO matches (matches_email_id,matches_question_id) VALUES "
 numQueries = 0
 
-with open('matches.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/matches.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -374,7 +374,7 @@ insertQ = "INSERT INTO question_scores (id, score) VALUES "
 numQueries = 0
 ignored=0
 import csv
-with open('question_scores.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/question_scores.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
@@ -399,7 +399,7 @@ insertQ = "INSERT INTO answer_scores (id, score) VALUES "
 numQueries = 0
 ignored=0
 
-with open('answer_scores.csv', newline='') as csvfile:
+with open('../data-science-for-good-careervillage/answer_scores.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
