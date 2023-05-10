@@ -1,0 +1,31 @@
+//Recursion 1
+MATCH (q:Questions)<-[:IS_REPLY_TO*1..]-(a:Answers)
+RETURN q,a
+
+//Recursion 2
+MATCH (q:Questions)<-[:IS_REPLY_TO*1..2]-
+(a:Answers)
+RETURN q, a
+
+//Recursion 3
+MATCH (q:Questions)<-[:IS_REPLY_TO*1..3]-
+(a:Answers)
+RETURN q,a
+
+//Selection 1
+MATCH (p:Professionals)-[]->(t:Tags)
+WHERE t.tags_tag_name='college'
+RETURN p,t
+
+//Selection 2
+MATCH (t:Tags)<-[:HAS_TAG]-(s:Students)-
+[:MEMBER_IN]->(b)
+WHERE t.tags_tag_name='college'
+AND b.groups_group_type='youth program'
+RETURN s,t,b
+
+//Selection 3
+MATCH (p:Professionals{professionals_id:
+'0079e89bf1544926b98310e81315b9f1'})-
+[:GOT_EMAIL]->(e:Emails)
+RETURN e
