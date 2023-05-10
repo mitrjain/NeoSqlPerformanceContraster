@@ -1,4 +1,4 @@
 *.csv
-*.zip
+.zip
 dataset/
 .DS_Store
