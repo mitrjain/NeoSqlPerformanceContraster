@@ -80,18 +80,18 @@ Workload Dsitribution:
 
 ### Project Contributions :
 
-Project Selection Search and Discovery : Cajetan, Mit and Ashish shortlisted 3 papers and voted
-BrainStorm and come up with Milestones :  Cajetan, Mit and Ashish 
-MySQL and Neo4j Installation and setup :  Cajetan, Mit and Ashish 
-Related Work / Literature Review : Ashish 
-Script to load data into MySQL : Mit 
-Script to load data into Neo4j : Cajetan
-Analysis of MySQL queries : Mit
-Analysis of Neo4j Cyphers : Ashish 
-Comparative analysis and inferencing conclusions : Ashish
+- Project Selection Search and Discovery : Cajetan, Mit and Ashish shortlisted 3 papers and voted 
+- BrainStorm and come up with Milestones :  Cajetan, Mit and Ashish 
+- MySQL and Neo4j Installation and setup :  Cajetan, Mit and Ashish 
+- Related Work / Literature Review : Ashish 
+- Script to load data into MySQL : Mit 
+- Script to load data into Neo4j : Cajetan
+- Analysis of MySQL queries : Mit
+- Analysis of Neo4j Cyphers : Ashish 
+- Comparative analysis and inferencing conclusions : Ashish
 
-Demo : Cajetan, Mit and Ashish have presented
-IEEE Report :  Cajetan, Mit and Ashish / Responsible to write sections the same way as presented above
+- Demo : Cajetan, Mit and Ashish have presented
+- IEEE Report :  Cajetan, Mit and Ashish / Responsible to write sections the same way as presented above
 
 All members are working on having both configurations that are described  so that at the end we can see
 3 different systems and tally if the benchmarks vary significantly. We have worked on asynchronous format
