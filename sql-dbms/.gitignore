@@ -1,0 +1,5 @@
+*.csv
+*.zip
+data-science-for-good-careervillage/
+.DS_Store
+.env
