@@ -26,4 +26,4 @@ A fancier way to do it would be drag and drop the cypher query in the `neo4j/cyp
 
 Post completion, a beautiful graph will emerge like the one below...
 
-![image](./neo4j-dbms/images/graph.png)
+![image](./neo4j-dbms/images/schema.png)
