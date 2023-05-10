@@ -75,6 +75,29 @@ After successfully loading the daatset into MySQL the following databse will be 
 
 ![ER Diagram](https://user-images.githubusercontent.com/26086412/237060808-940d1ae2-9532-49a2-9b0b-73f8fc7d3a9e.png)
 
+Workload Dsitribution: 
+
+
+### Project Contributions :
+
+Project Selection Search and Discovery : Cajetan, Mit and Ashish shortlisted 3 papers and voted
+BrainStorm and come up with Milestones :  Cajetan, Mit and Ashish 
+MySQL and Neo4j Installation and setup :  Cajetan, Mit and Ashish 
+Related Work / Literature Review : Ashish 
+Script to load data into MySQL : Mit 
+Script to load data into Neo4j : Cajetan
+Analysis of MySQL queries : Mit
+Analysis of Neo4j Cyphers : Ashish 
+Comparative analysis and inferencing conclusions : Ashish
+
+Demo : Cajetan, Mit and Ashish have presented
+IEEE Report :  Cajetan, Mit and Ashish / Responsible to write sections the same way as presented above
+
+All members are working on having both configurations that are described  so that at the end we can see
+3 different systems and tally if the benchmarks vary significantly. We have worked on asynchronous format
+and any progress made was shared in a shared doc to avoid solving the same problems. Overall, in this
+moment we were able to build and contribute significantly to the development progress and helping each other out in every step whenever required.
+
 ### Environment specifications
 Following are the specifications of the environment on which this mysql-pyhton-client  was last executed/tested: 
 - MacBook Air M1
