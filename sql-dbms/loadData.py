@@ -20,13 +20,13 @@ mycursor = mydb.cursor()
 print("Loading professionals.csv")
 #professionals
 insertQ = "INSERT INTO professionals (professionals_id, professionals_location, professionals_industry, professionals_headline, professionals_date_joined) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/professionals.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -48,13 +48,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading students.csv")
 #students
 insertQ = "INSERT INTO students (students_id,students_location,students_date_joined) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/students.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
 
@@ -76,13 +76,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading tags.csv")
 #tags
 insertQ = "INSERT INTO tags (tags_tag_id,tags_tag_name) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/tags.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -101,13 +101,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading groups.csv")
 # groups_
 insertQ = "INSERT INTO groups_ (groups_id,groups_group_type) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/groups.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
 
@@ -127,13 +127,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading questions.csv")
 # questions
 insertQ = "INSERT INTO questions (questions_id,questions_author_id,questions_date_added,questions_title,questions_body) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/questions.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -157,13 +157,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading tag_questions.csv")
 # # tag_questions
 insertQ = "INSERT INTO tag_questions (tag_questions_tag_id,tag_questions_question_id) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/tag_questions.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -182,13 +182,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading tag_users.csv")
 # # tag_users
 insertQ = "INSERT INTO tag_users (tag_users_tag_id,tag_users_user_id) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/tag_users.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -207,13 +207,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading group_memberships.csv")
 # group_memberships
 insertQ = "INSERT INTO group_memberships (group_memberships_group_id,group_memberships_user_id) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/group_memberships.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -232,13 +232,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading school_memberships.csv")
 # school_memberships
 insertQ = "INSERT INTO school_memberships (school_memberships_school_id,school_memberships_user_id) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/school_memberships.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -257,13 +257,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading answers.csv")
 # answers
 insertQ = "INSERT INTO answers (answers_id,answers_author_id,answers_question_id,answers_date_added,answers_body) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/answers.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -287,13 +287,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading comments.csv")
 # comments
 insertQ = "INSERT INTO comments (comments_id,comments_author_id,comments_parent_content_id,comments_date_added,comments_body) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/comments.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -317,13 +317,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading emails.csv")
 # emails
 insertQ = "INSERT INTO emails (emails_id,emails_recipient_id,emails_date_sent,emails_frequency_level) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/emails.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -345,13 +345,13 @@ print("No. of rows inserted = ",numQueries)
 print("Loading matches.csv")
 # matches
 insertQ = "INSERT INTO matches (matches_email_id,matches_question_id) VALUES "
-numQueries = 0
+numQueries = -1
 
 with open('dataset/matches.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue        
         insert = ''+insertQ
@@ -371,14 +371,14 @@ print("No. of rows inserted = ",numQueries)
 print("Loading question_scores.csv")
 #question_scores
 insertQ = "INSERT INTO question_scores (id, score) VALUES "
-numQueries = 0
+numQueries = -1
 ignored=0
 import csv
 with open('dataset/question_scores.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
@@ -396,14 +396,14 @@ print("No. of rows inserted = ",numQueries)
 print("Loading answer_scores.csv")
 # answer_scores
 insertQ = "INSERT INTO answer_scores (id, score) VALUES "
-numQueries = 0
+numQueries = -1
 ignored=0
 
 with open('dataset/answer_scores.csv', newline='') as csvfile:
     readerObj = csv.reader(csvfile, delimiter=',')
     # print("Building insert query")
     for row in readerObj:
-        if numQueries==0:
+        if numQueries==-1:
             numQueries +=1
             continue
         insert = ''+insertQ
